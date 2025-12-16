@@ -19,7 +19,7 @@ connect c##24CE123/prince1204;
 
 -- this will fail becaue we are try on the system user so we have to first exit the sql puls then we have to login back to system user then we have to grant all privileges to that user 
 
-GRANT ALL privileges TO c##24CE123;
+GRANT all privileges to c##24CE123;
 
 -- now we will create table of employees
 
