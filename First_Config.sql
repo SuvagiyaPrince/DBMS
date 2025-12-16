@@ -23,6 +23,8 @@ GRANT ALL privileges TO c##24CE123;
 
 -- now we will create table of employees
 
+connect c##24CE123/prince1204;
+
 create table employees
   (
      emp_id NUMBER PRIMARY KEY,
