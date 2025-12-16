@@ -1,10 +1,10 @@
 -- first time we dont know the system password so first we have to unlock the system or forgot the password of system user then write
 
 / as sysdba
-SELECT username , account_status FROM dba_users WHERE username = "SYSTEM";
+SELECT username , account_status FROM dba_users WHERE username = 'SYSTEM';
 ALTER USER system ACCOUNT UNLOCK;
 ALTER USER system IDENTIFIED BY "Oracle#123"
-SELECT username , account_status FROM dba_users WHERE username = "SYSTEM";
+SELECT username , account_status FROM dba_users WHERE username = 'SYSTEM';
 EXIT
 
 -- after this we have to just reopen the sql plus then we have to login with username system and password Oracle#123
