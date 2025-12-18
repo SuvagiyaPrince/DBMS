@@ -25,19 +25,4 @@ GRANT all privileges to c##24CE123;
 
 connect c##24CE123/prince1204;
 
-create table employees
-  (
-     emp_id NUMBER PRIMARY KEY,
-     name VARCHAR2(100) NOT NULL
-  );
 
--- do commit for store what you build
-commit;
-
--- now we will use unique for give unique value in email collum 
-
-create table employees_1
-  (
-       emp_id NUMBER PRIMARY KEY,
-       email VARCHAR2(150) UNIQUE
-  );
